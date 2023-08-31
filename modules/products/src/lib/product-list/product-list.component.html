@@ -1,2 +1,7 @@
-<p>product-list works!</p>
-<org-ui></org-ui>
+<input type="search" name="search" [formControl]="control"/>
+
+<ul>
+  <li *ngFor="let product of products$ | async">{{product.name}}</li>
+</ul>
+
+OK
